@@ -1,0 +1,19 @@
+hijau: servo B
+bir  u: Servo A
+kuning: Servo D
+Orange: Servo C
+pink: tangan
+
+
+Paling tinggi
+enter angle 1 : 100
+enter angle 2 : 0
+enter angle 3 : 40
+current =  100   0   40
+
+
+Paling rendah
+enter angle 1 : 180
+enter angle 2 : 80
+enter angle 3 : 30
+current =  180   80   30
