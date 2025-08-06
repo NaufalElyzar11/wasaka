@@ -17,7 +17,7 @@ Servo myservo;
 void setup() {
   Serial.begin(9600);
   myservo.attach(9);
-  myservo.write(0);
+  myservo.write(90);
 }
 
 // void loop() {
