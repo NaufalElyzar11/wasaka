@@ -77,6 +77,14 @@ def body_kinematics(body_position, body_orientation_deg):
 
 def inverse_kinematics(x, y, z):
     coxa_angle = math.pi/2 + math.atan2(x, y)
+
+    # --- TAMBAHKAN BLOK NORMALISASI INI ---
+    # Normalisasi sudut agar berada dalam rentang (-pi, pi] atau (-180, 180] deg
+    # Ini untuk mencegah lompatan 360 derajat dari atan2
+    if coxa_angle > math.pi:
+        coxa_angle -= 2 * math.pi
+    # ----------------------------------------
+
     r = math.sqrt(x*x + y*y)
     d = math.sqrt(r*r + z*z)
     L1, L2 = femur_length, tibia_length
